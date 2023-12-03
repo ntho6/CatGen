@@ -1,0 +1,21 @@
+{
+    "name": "CatGen",
+    "short_name": "CatGen",
+    "description": "Cat Generator",
+  
+    "scope": "/CatGen/",
+    "start_url": "/CatGen/",
+  
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+
+    "display": "standalone", 
+    
+    "icons": [
+        {
+          "src": "/CatGen/files/image.png",
+          "type": "image/png",
+          "sizes": "700x700"
+        }
+    ]
+  }

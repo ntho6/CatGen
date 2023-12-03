@@ -1,0 +1,143 @@
+@font-face {
+    src: url('./font1.ttf');
+    font-family: popp1;
+}
+
+@font-face {
+    src: url('./font2.ttf');
+    font-family: popp2;
+}
+
+html {
+    transition: filter 1s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: popp1;
+    background-color: #000000;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    height: 80vh;
+    margin-bottom: 30px;
+    max-width: 1200px;
+}
+
+a {
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    transition: 0.6s;
+    color: #dadada;
+    animation: fadeIn 2s forwards;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);
+    opacity: 70%;
+    text-decoration: none;
+}
+
+ul {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+a:hover {
+    color: #919191;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+h1 {
+    font-family: popp2;
+    color: #dadada;
+    font-size: 2.6em;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+p, input, button {
+    font-family: popp1;
+}
+
+input, button {
+    padding: 4px 8px;
+    margin: 0 0 4px 0;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    border-style: inset;
+    background-color: transparent;
+    transition: 0.3s;
+    outline: 0;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #dadada;
+}
+
+#submitButton:hover {
+    color: #919191;
+    cursor: pointer;
+}
+
+p {
+    color: #dadada;
+}
+
+@media screen and (min-width: 2560px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+
+    a {
+        font-size: 2.5em;
+    }
+
+    input, #submitButton {
+        padding: 6px 15px;
+        margin: 0px 0 15px 0;
+        font-size: 40px;
+        border-radius: 10px;
+        border-style: inset;
+        background-color: transparent;
+        background: rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: #dadada;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    input, #submitButton {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cat Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./files/image.png">
+    <link rel="stylesheet" type="text/css" href="./files/style.css">
+    <link rel="canonical" href="https://ntho6.github.io/CatGen/" />
+    <link rel="manifest" href="/CatGen/files/manifest.webmanifest">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cat Generator</h1>
+        <input type="text" placeholder="https://catgen..." autocomplete="off" textarea spellcheck="false" id="inputUrl">
+        <button id="submitButton" onclick="search()">Search</button>
+        <p id="result"></p>
+        <div id="downloadLinks"></div>
+        <a id="downloadButton" style="display: none;">Download PDF</a>
+    </div>
+    <script src="./files/script.js"></script>
+    <script>
+        if (navigator.serviceWorker) {
+          navigator.serviceWorker.register (
+            '/CatGen/files/sw.js',
+            {scope: '/CatGen/'}
+          )
+        }
+    </script>
+    <script src="./files/sw.js"></script>
+</body>
+
+</html>
